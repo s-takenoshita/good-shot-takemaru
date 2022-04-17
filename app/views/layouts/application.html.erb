@@ -18,7 +18,7 @@
     <header class="shadow-sm mb-3">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand p-3" href="/books">Bookers</a>
+          <a class="navbar-brand p-3" href="/books">GoodShotTour</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,13 +41,13 @@
                 <% end %>
               </li>
               <li class="nav-item">
+                <%# NewGame %>
                 <%= link_to(root_path, class: 'nav-link') do %>
                   <i class="fa-solid fa-book"></i> New
                 <% end %>
               </li>
               <li class="nav-item">
-                <%# <%= link_to(user_path(current_user.id), class: 'nav-link') do %>
-                  <%= link_to(root_path, class: 'nav-link') do %>
+                <%= link_to(user_path(current_user.id), class: 'nav-link') do %>
                   <i class="fa-solid fa-user"></i> MyPage <%= current_user.name %>
                 <% end %>
               </li>
